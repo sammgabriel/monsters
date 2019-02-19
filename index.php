@@ -20,9 +20,17 @@ $f3->set('DEBUG',3);
 
 //define a default route
 $f3->route('GET /', function(){
-    //echo '<h1>Monsters</h1>';
+    echo '<h1>Monsters</h1>';
     $monster = new Monster("Mike Wasowski");
     $monster->attack();
+    $monster->setName("Randall Boggs");
+    echo "My name is " . $monster->getName();
+    $monster->attack();
+
+    $vampire = new Vampire();
+    $vampire->attack();
+    $vampire->attack();
+    echo "Number of victims: " . $vampire->getVictims();
 
     //$template = new Template;
     //echo $template->render('views/home.html');
