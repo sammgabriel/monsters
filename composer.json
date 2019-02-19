@@ -1,0 +1,12 @@
+{
+  "name": "sgabriel/328/monsters",
+  "authors": [
+    {
+      "name": "Samantha Gabriel",
+      "email": "sgabriel2@mail.greenriver.edu"
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
