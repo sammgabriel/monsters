@@ -28,9 +28,16 @@ $f3->route('GET /', function(){
     $monster->attack();
 
     $vampire = new Vampire();
+    $vampire->setName("Dracula");
     $vampire->attack();
     $vampire->attack();
     echo "Number of victims: " . $vampire->getVictims();
+
+    $hydra = new Hydra("Timmy");
+    $hydra->attack();
+    $hydra->attack();
+    $hydra->attack();
+    echo "<p>The hydra now has " . $hydra->getHeads() . " heads!</p>";
 
     //$template = new Template;
     //echo $template->render('views/home.html');
